@@ -1,19 +1,12 @@
 import React from "react";
 
 function Display(props) {
-  let category = "loading...";
+  let category = "loading... ";
   if (props.data.category) {
     category = props.data.category.title;
   }
-
   return (
     <div>
-      {/* <strong>Choose a category:</strong> <br />
-      <button id="1">1.{}</button>
-      <br />
-      <button id="2">2.{}</button>
-      <br />
-      <button id="3">3.{}</button> */}
       <strong>User's score: </strong> {props.score} <br />
       <strong>Question: </strong> {props.data.question} <br />
       <strong>Point Value:</strong> {props.data.value} <br />
